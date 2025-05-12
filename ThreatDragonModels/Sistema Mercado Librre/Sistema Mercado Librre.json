@@ -1,7 +1,7 @@
 {
   "version": "2.4.1",
   "summary": {
-    "title": "Sistema Mercado Librre",
+    "title": "Sistema Mercado Libre",
     "owner": "Mercado Libre",
     "description": "El sistema de ventas de Mercado Libre permitirá centralizar su antigua forma de ventas a través de diversas plataformas a una única plataforma de venta centralizada. Al ser la primera versión de la aplicación web de dicha plataforma, se contemplan 3 tipos de usuarios:\n1.  Administrador\n2. Empleado\n3. Cliente\nEl administrador puede registrar cuentas de empleados, los empleados pueden agregar, modificar y eliminar productos de la plataforma, así como agregar y editar categorías. Los clientes pueden iniciar sesión, visualizar productos, agregar productos al carrito, editar los productos del carrito y realizar una compra, así como visualizar el historial de compras",
     "id": 0
