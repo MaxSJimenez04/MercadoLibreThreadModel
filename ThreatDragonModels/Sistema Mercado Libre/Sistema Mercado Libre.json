@@ -52,7 +52,7 @@
           },
           {
             "position": {
-              "x": 190,
+              "x": 189.75,
               "y": 70
             },
             "size": {
@@ -176,19 +176,25 @@
                   "new": false,
                   "number": 1,
                   "score": ""
+                },
+                {
+                  "id": "f6ce9c78-df83-416d-8ef7-bbb643aba4dc",
+                  "title": "Negación de movimientos de compra",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "El cliente niega haber realizado o haber cancelado una compra en el sistema",
+                  "mitigation": "1. Implementar una bitácora con las ventas realizadas\n2. Implementar un módulo de historial de ventas",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "repudiation": 0
+                "repudiation": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -205,8 +211,8 @@
                 "text": "Empleado"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -302,9 +308,40 @@
               "description": "Persona encargada de la gestión de productos y catálogos, tiene permisos de lectura y escritura en la mayoría del sistema",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "925f7b3b-243e-476f-bb04-c7fdca906abf",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Un atacante utiliza las credenciales de empleado para realizar movimientos en datos de productos / categorías de forma fraudulenta",
+                  "mitigation": "1. Solicitar contraseña antes de realizar un movimiento\n2. Implementar bitácora de movimientos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "dc3777d2-f494-498e-a75d-fd253de944c3",
+                  "title": "Movimientos fraudulentos",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "El empleado niega haber hecho movimientos en el sistema",
+                  "mitigation": "1. Implementar una bitácora de cambios",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -1481,6 +1518,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 1
+    "threatTop": 4
   }
 }
