@@ -399,42 +399,6 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Límite Servidor Web",
-              "description": "Fin de",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Límite Servidor Web"
-            ],
-            "id": "dbd9e46d-72bb-4931-b364-a0478ad86b88",
-            "source": {
-              "x": 820,
-              "y": 50
-            },
-            "target": {
-              "x": 100,
-              "y": 40
-            },
-            "vertices": [
-              {
-                "x": 660,
-                "y": 200
-              },
-              {
-                "x": 240,
-                "y": 200
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -859,6 +823,146 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Páginas Web",
+              "description": "La página seleccionada al navegar en el sistema",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Páginas Web"
+            ],
+            "id": "a0710943-9cb7-4f2a-bbbf-a469accb37c8",
+            "source": {
+              "x": 250,
+              "y": 610
+            },
+            "target": {
+              "x": 400,
+              "y": 510
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": 560
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lee archivo de configuración",
+              "description": "Se ejecuta el archivo de configuración al iniciar el servicio web",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Lee archivo de configuración"
+            ],
+            "id": "fcbe0211-307b-4bbe-a512-85e10de2e238",
+            "source": {
+              "x": 620,
+              "y": 630
+            },
+            "target": {
+              "x": 530,
+              "y": 510
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 600
+              },
+              {
+                "x": 560,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Límite Usuario / Servidor Web",
+              "description": "Fin de",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Límite Usuario / Servidor Web"
+            ],
+            "id": "dbd9e46d-72bb-4931-b364-a0478ad86b88",
+            "source": {
+              "x": 820,
+              "y": 50
+            },
+            "target": {
+              "x": 100,
+              "y": 40
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 200
+              },
+              {
+                "x": 240,
+                "y": 200
+              }
+            ]
+          },
+          {
             "position": {
               "x": 390,
               "y": 390
@@ -979,8 +1083,8 @@
           },
           {
             "position": {
-              "x": 610,
-              "y": 610
+              "x": 620,
+              "y": 600
             },
             "size": {
               "width": 220,
