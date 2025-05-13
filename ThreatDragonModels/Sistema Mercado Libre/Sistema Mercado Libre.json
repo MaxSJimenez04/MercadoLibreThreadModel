@@ -660,60 +660,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Consultas a Base de Datos",
-              "description": "Consultas hechas por los usuarios desde el servidor para satisfacer una petición",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Consultas a Base de Datos"
-            ],
-            "id": "9a380cdd-d0af-4c8c-8451-236e2dead8f6",
-            "source": {
-              "x": 530,
-              "y": 480
-            },
-            "target": {
-              "cell": "caafeb40-c323-4fbf-af43-79d67af528ce",
-              "port": "678ad696-10b8-476f-b556-05ac6f609d6f"
-            },
-            "vertices": [
-              {
-                "x": 670,
-                "y": 480
-              },
-              {
-                "x": 910,
-                "y": 500
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Respuesta Web",
               "description": "El código de respuesta al crear una cuenta de empleado",
               "outOfScope": false,
@@ -799,56 +745,6 @@
               {
                 "x": 280,
                 "y": 230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Petición Web",
-              "description": "Una petición para realizar una acción del cliente:\nRegistrar una cuenta\nIniciar Sesión\nVer productos\nFiltrar productos\nGestionar Carrito de Compra",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Petición Web"
-            ],
-            "id": "d37ada55-f77f-49f6-922d-90ce812518e7",
-            "source": {
-              "x": 210,
-              "y": 130
-            },
-            "target": {
-              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-              "port": "b8034d73-b343-49cb-9bae-4bd927124b7c"
-            },
-            "vertices": [
-              {
-                "x": 210,
-                "y": 330
               }
             ]
           },
@@ -1043,6 +939,110 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Petición Web",
+              "description": "Una petición para realizar una acción del cliente:\nRegistrar una cuenta\nIniciar Sesión\nVer productos\nFiltrar productos\nGestionar Carrito de Compra",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Petición Web"
+            ],
+            "id": "d37ada55-f77f-49f6-922d-90ce812518e7",
+            "source": {
+              "x": 210,
+              "y": 130
+            },
+            "target": {
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "b8034d73-b343-49cb-9bae-4bd927124b7c"
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consultas a Base de Datos",
+              "description": "Consultas hechas por los usuarios desde el servidor para satisfacer una petición",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Consultas a Base de Datos"
+            ],
+            "id": "9a380cdd-d0af-4c8c-8451-236e2dead8f6",
+            "source": {
+              "x": 530,
+              "y": 480
+            },
+            "target": {
+              "cell": "caafeb40-c323-4fbf-af43-79d67af528ce",
+              "port": "678ad696-10b8-476f-b556-05ac6f609d6f"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 480
+              },
+              {
+                "x": 910,
+                "y": 500
+              }
+            ]
+          },
+          {
             "position": {
               "x": 390,
               "y": 390
@@ -1056,8 +1056,8 @@
                 "text": "Sitio Web \nMercado Libre"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1153,12 +1153,47 @@
               "description": "El servidor del sistema web de  Mercado libre que procesa las solicitudes y envía consultas a la base de datos",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": true,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a1999e16-6f8f-4252-aab4-ed86065ac2f0",
+                  "title": "Mensaje de error expuesto",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Se muestran los mensajes de error detallados, pilas de excepción o rutas de archivos en la página web cuando ocurre un error",
+                  "mitigation": "1. No enviar los mensajes de error a la página web\n2. No utilizar métodos que muestran la pila de excepción al capturar una excepción",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "8dace6f8-bad5-4612-b650-ad00dbd3823c",
+                  "title": "Ataque DDoS.",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Se realiza un ataque al servidor con una sobre carga de peticiones al servidor, ralentizando las respuestas y provocando una caída del servidor.",
+                  "mitigation": "1. Utilizar un balanceo de cargas del servidor web.\n2. Implementar un sistema de monitoreo basado en las IP de los clientes para bloquear el acceso en caso de ataque",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1298,11 +1333,13 @@
                 "text": "Base de Datos"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1398,13 +1435,46 @@
               "description": "Base de datos donde se almacena el sistema de mercado libre",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "66ed8c4f-12a5-40c4-9484-c8122b294659",
+                  "title": "Revelación de datos sensibles",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Se exponen datos sensibles de los clientes como: Dirección, Contraseña, Correo electrónico, Teléfono, Historial de compras, Cuentas bancarias, Código Postal, etc.",
+                  "mitigation": "1. Implementar cifrado de datos sensibles\n2. Evitar almacenar datos sensibles\n3. Cifrar la conexión entre la base de datos y el servidor web\n4. Implementar el protocolo TLS/SSL para la conexión cliente / servidor web",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "3a72e6ae-e15e-40d0-9ad1-b1711a9dbaee",
+                  "title": "Saturación de Consultas.",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Mal diseño de la base de datos o ataque DoS que ralentiza las respuesta de base de datos o provoca su caída.",
+                  "mitigation": "1. Implementar vistas y procedimientos almacenados\n2. Tener un diseño de base de datos simple y con un nivel de normalización correcto",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
             }
           },
           {
@@ -1536,6 +1606,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 5
+    "threatTop": 9
   }
 }
