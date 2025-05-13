@@ -26,6 +26,32 @@
         "cells": [
           {
             "position": {
+              "x": 970,
+              "y": 335
+            },
+            "size": {
+              "width": 410,
+              "height": 220
+            },
+            "attrs": {
+              "label": {
+                "text": "Límite Base de datos / Servidor web\n"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "d5c1b6cb-60b0-4f6f-8617-14346dc7f797",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Límite Base de datos / Servidor web\n",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 190,
               "y": 70
             },
@@ -621,6 +647,114 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta Web",
+              "description": "El código de respuesta al crear una cuenta de empleado",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuesta Web"
+            ],
+            "id": "be8e5a1c-9da7-4893-adaa-0aa605b763e6",
+            "source": {
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "82fb06d7-7940-4634-89f2-1bbcdc431168"
+            },
+            "target": {
+              "cell": "b3df5c4a-d0fc-4a9a-8963-e6942291f660",
+              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 360
+              },
+              {
+                "x": 750,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Petición Web",
+              "description": "Petición para registrar una cuenta de empleado",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Petición Web"
+            ],
+            "id": "996c2ef7-3291-4033-8c7d-85f46469a5c2",
+            "source": {
+              "x": 640,
+              "y": 130
+            },
+            "target": {
+              "x": 540,
+              "y": 390
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 220
+              },
+              {
+                "x": 580,
+                "y": 320
+              }
+            ]
+          },
+          {
             "position": {
               "x": 400,
               "y": 390
@@ -864,8 +998,8 @@
           },
           {
             "position": {
-              "x": 900,
-              "y": 440
+              "x": 1100,
+              "y": 415
             },
             "size": {
               "width": 120,
