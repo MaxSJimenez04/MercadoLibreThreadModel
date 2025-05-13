@@ -561,8 +561,62 @@
                 "y": 190
               },
               {
-                "x": 400,
+                "x": 370,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta Web",
+              "description": "El estado de la acción realizada, reflejada en la página actual",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuesta Web"
+            ],
+            "id": "8f27f868-4aa1-484e-873c-26ed8fb4cbef",
+            "source": {
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "c8dc8026-c6b2-4d4f-9a4d-ea6241bb39b4"
+            },
+            "target": {
+              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
+              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
+            },
+            "vertices": [
+              {
+                "x": 530,
                 "y": 310
+              },
+              {
+                "x": 530,
+                "y": 160
               }
             ]
           },
