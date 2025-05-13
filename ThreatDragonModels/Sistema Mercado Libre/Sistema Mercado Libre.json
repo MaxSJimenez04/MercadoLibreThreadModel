@@ -755,6 +755,60 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consultas a Base de Datos",
+              "description": "Consultas hechas por los usuarios desde el servidor para satisfacer una petición",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Consultas a Base de Datos"
+            ],
+            "id": "9a380cdd-d0af-4c8c-8451-236e2dead8f6",
+            "source": {
+              "x": 530,
+              "y": 480
+            },
+            "target": {
+              "cell": "caafeb40-c323-4fbf-af43-79d67af528ce",
+              "port": "678ad696-10b8-476f-b556-05ac6f609d6f"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 480
+              },
+              {
+                "x": 910,
+                "y": 500
+              }
+            ]
+          },
+          {
             "position": {
               "x": 400,
               "y": 390
