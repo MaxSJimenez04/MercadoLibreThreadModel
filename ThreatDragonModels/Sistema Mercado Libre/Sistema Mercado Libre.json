@@ -358,8 +358,8 @@
                 "text": "Administrador"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -455,9 +455,27 @@
               "description": "Persona encargada de la gestión de usuarios, registra a los empleados",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7438e6b8-be56-4f58-bb49-9bc498c419ca",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Se intenta acceder al sistema utilizando credenciales de una cuenta administrador robadas",
+                  "mitigation": "1. Implementar autenticación adecuada\n2. No guardar secretos",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1518,6 +1536,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
