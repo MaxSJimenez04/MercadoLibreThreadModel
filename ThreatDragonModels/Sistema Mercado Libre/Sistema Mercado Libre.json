@@ -455,110 +455,6 @@
             "data": {
               "type": "tm.Flow",
               "name": "Petición Web",
-              "description": "Una petición para realizar una acción del cliente:\nRegistrar una cuenta\nIniciar Sesión\nVer productos\nFiltrar productos\nGestionar Carrito de Compra",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Petición Web"
-            ],
-            "id": "d37ada55-f77f-49f6-922d-90ce812518e7",
-            "source": {
-              "x": 220,
-              "y": 130
-            },
-            "target": {
-              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-              "port": "b8034d73-b343-49cb-9bae-4bd927124b7c"
-            },
-            "vertices": [
-              {
-                "x": 220,
-                "y": 330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Respuesta Web",
-              "description": "Respuesta en base a la petición del cliente:\nIniciar sesión\nMostrar un producto\nRealizar un movimiento en el carrito de compras\nMostrar el historial de compras",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Respuesta Web"
-            ],
-            "id": "1146fea8-0524-449c-926a-3360c1de1cdf",
-            "source": {
-              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-              "port": "b8034d73-b343-49cb-9bae-4bd927124b7c"
-            },
-            "target": {
-              "cell": "5b99475d-8fe2-4510-94a7-6a15e53f578c",
-              "port": "a733e59c-7525-480d-8aad-8565534e36f9"
-            },
-            "vertices": [
-              {
-                "x": 320,
-                "y": 340
-              },
-              {
-                "x": 290,
-                "y": 230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Petición Web",
               "description": "Petición Web para realizar un cambio de CRUD para Producto o Catálogo: Crear, Modificar o Eliminar",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -637,66 +533,12 @@
             },
             "vertices": [
               {
-                "x": 530,
+                "x": 520,
                 "y": 310
               },
               {
-                "x": 530,
+                "x": 520,
                 "y": 160
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Respuesta Web",
-              "description": "El código de respuesta al crear una cuenta de empleado",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Respuesta Web"
-            ],
-            "id": "be8e5a1c-9da7-4893-adaa-0aa605b763e6",
-            "source": {
-              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-              "port": "82fb06d7-7940-4634-89f2-1bbcdc431168"
-            },
-            "target": {
-              "cell": "b3df5c4a-d0fc-4a9a-8963-e6942291f660",
-              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
-            },
-            "vertices": [
-              {
-                "x": 680,
-                "y": 360
-              },
-              {
-                "x": 750,
-                "y": 210
               }
             ]
           },
@@ -809,13 +651,221 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta Web",
+              "description": "El código de respuesta al crear una cuenta de empleado",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuesta Web"
+            ],
+            "id": "be8e5a1c-9da7-4893-adaa-0aa605b763e6",
+            "source": {
+              "x": 570,
+              "y": 400
+            },
+            "target": {
+              "cell": "b3df5c4a-d0fc-4a9a-8963-e6942291f660",
+              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 360
+              },
+              {
+                "x": 750,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta Web",
+              "description": "Respuesta en base a la petición del cliente:\nIniciar sesión\nMostrar un producto\nRealizar un movimiento en el carrito de compras\nMostrar el historial de compras",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuesta Web"
+            ],
+            "id": "1146fea8-0524-449c-926a-3360c1de1cdf",
+            "source": {
+              "x": 390,
+              "y": 400
+            },
+            "target": {
+              "cell": "5b99475d-8fe2-4510-94a7-6a15e53f578c",
+              "port": "a733e59c-7525-480d-8aad-8565534e36f9"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 340
+              },
+              {
+                "x": 280,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Petición Web",
+              "description": "Una petición para realizar una acción del cliente:\nRegistrar una cuenta\nIniciar Sesión\nVer productos\nFiltrar productos\nGestionar Carrito de Compra",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Petición Web"
+            ],
+            "id": "d37ada55-f77f-49f6-922d-90ce812518e7",
+            "source": {
+              "x": 210,
+              "y": 130
+            },
+            "target": {
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "b8034d73-b343-49cb-9bae-4bd927124b7c"
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Resultados de Consulta",
+              "description": "La respuesta a las consultas realizadas por el servidor",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Resultados de Consulta"
+            ],
+            "id": "1b85c56b-b24a-4e9a-97ed-b8424cbb6f4a",
+            "source": {
+              "x": 1080,
+              "y": 420
+            },
+            "target": {
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "82fb06d7-7940-4634-89f2-1bbcdc431168"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 420
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 400,
+              "x": 390,
               "y": 390
             },
             "size": {
-              "width": 140,
-              "height": 110
+              "width": 160,
+              "height": 130
             },
             "attrs": {
               "text": {
@@ -916,7 +966,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Sitio Web \nMercado Libre",
-              "description": "El servidor del sistema web de  Mercado libre",
+              "description": "El servidor del sistema web de  Mercado libre que procesa las solicitudes y envía consultas a la base de datos",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
