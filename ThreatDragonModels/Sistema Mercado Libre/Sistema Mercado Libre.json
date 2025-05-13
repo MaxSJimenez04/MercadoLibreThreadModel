@@ -142,7 +142,7 @@
           },
           {
             "position": {
-              "x": 400,
+              "x": 380,
               "y": 70
             },
             "size": {
@@ -455,6 +455,114 @@
               {
                 "x": 220,
                 "y": 330
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta Web",
+              "description": "Respuesta en base a la petición del cliente:\nIniciar sesión\nMostrar un producto\nRealizar un movimiento en el carrito de compras\nMostrar el historial de compras",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respuesta Web"
+            ],
+            "id": "1146fea8-0524-449c-926a-3360c1de1cdf",
+            "source": {
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "b8034d73-b343-49cb-9bae-4bd927124b7c"
+            },
+            "target": {
+              "cell": "5b99475d-8fe2-4510-94a7-6a15e53f578c",
+              "port": "a733e59c-7525-480d-8aad-8565534e36f9"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 340
+              },
+              {
+                "x": 290,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Petición Web",
+              "description": "Petición Web para realizar un cambio de CRUD para Producto o Catálogo: Crear, Modificar o Eliminar",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Petición Web"
+            ],
+            "id": "0aa74e71-cefb-4939-9f9b-7dd3840a403b",
+            "source": {
+              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
+              "port": "7c289ccc-11cf-4c0d-ad8d-4a1f21b1fc2f"
+            },
+            "target": {
+              "x": 420,
+              "y": 390
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 190
+              },
+              {
+                "x": 400,
+                "y": 310
               }
             ]
           },
