@@ -45,6 +45,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -128,7 +129,6 @@
               ]
             },
             "id": "5b99475d-8fe2-4510-94a7-6a15e53f578c",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Cliente",
@@ -161,6 +161,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -244,7 +245,6 @@
               ]
             },
             "id": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Empleado",
@@ -277,6 +277,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -360,11 +361,10 @@
               ]
             },
             "id": "b3df5c4a-d0fc-4a9a-8963-e6942291f660",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Administrador",
-              "description": "Persona encargada de la gestión de usuarios, registrar a los empleados",
+              "description": "Persona encargada de la gestión de usuarios, registra a los empleados",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
