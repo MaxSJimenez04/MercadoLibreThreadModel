@@ -40,8 +40,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d5c1b6cb-60b0-4f6f-8617-14346dc7f797",
             "zIndex": -1,
+            "id": "d5c1b6cb-60b0-4f6f-8617-14346dc7f797",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Límite Base de datos / Servidor web\n",
@@ -64,8 +64,8 @@
                 "text": "Cliente"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -161,9 +161,27 @@
               "description": "Un usuario que realiza compras y visualiza los productos, solo tiene permisos de lectura",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "0353b9f6-c9e7-4c23-8fe4-f887b1eec475",
+                  "title": "Ataque de fuerza bruta.",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Un atacante prueba combinaciones de usuario y contraseña mediante diversos métodos para lograr conseguir credenciales válidas para una cuenta de cliente",
+                  "mitigation": "1. Bloquear el inicio de sesión por 300 segundos si se falla 3 veces.\n2. Utilizar mensaje general si el usuario y/o contraseña son incorrectos, no indicar específicamente cual ha fallado.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             },
             "tools": {
               "items": [
@@ -990,6 +1008,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1073,7 +1092,6 @@
               ]
             },
             "id": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Sitio Web \nMercado Libre",
@@ -1112,6 +1130,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1195,7 +1214,6 @@
               ]
             },
             "id": "358f4b81-d724-4e83-b5af-febaeac76e53",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Configuración de Aplicación Web",
@@ -1235,6 +1253,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1318,7 +1337,6 @@
               ]
             },
             "id": "caafeb40-c323-4fbf-af43-79d67af528ce",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Base de Datos",
@@ -1358,6 +1376,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1441,7 +1460,6 @@
               ]
             },
             "id": "593e8a6c-90f4-42fa-94db-b77806a39714",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "Página Web en Disco",
@@ -1463,6 +1481,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
