@@ -371,6 +371,42 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Límite Servidor Web",
+              "description": "Fin de",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Límite Servidor Web"
+            ],
+            "id": "dbd9e46d-72bb-4931-b364-a0478ad86b88",
+            "source": {
+              "x": 820,
+              "y": 50
+            },
+            "target": {
+              "x": 100,
+              "y": 40
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 200
+              },
+              {
+                "x": 240,
+                "y": 200
+              }
+            ]
           }
         ],
         "description": "Modelo de amenazas para las operaciones entre el cliente, el servidor web y la base de datos"
