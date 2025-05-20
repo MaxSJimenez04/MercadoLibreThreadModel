@@ -499,114 +499,6 @@
             "data": {
               "type": "tm.Flow",
               "name": "Petición Web",
-              "description": "Petición Web para realizar un cambio de CRUD para Producto o Catálogo: Crear, Modificar o Eliminar",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Petición Web"
-            ],
-            "id": "0aa74e71-cefb-4939-9f9b-7dd3840a403b",
-            "source": {
-              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
-              "port": "7c289ccc-11cf-4c0d-ad8d-4a1f21b1fc2f"
-            },
-            "target": {
-              "x": 420,
-              "y": 390
-            },
-            "vertices": [
-              {
-                "x": 350,
-                "y": 190
-              },
-              {
-                "x": 370,
-                "y": 320
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Respuesta Web",
-              "description": "El estado de la acción realizada, reflejada en la página actual",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Respuesta Web"
-            ],
-            "id": "8f27f868-4aa1-484e-873c-26ed8fb4cbef",
-            "source": {
-              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-              "port": "c8dc8026-c6b2-4d4f-9a4d-ea6241bb39b4"
-            },
-            "target": {
-              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
-              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
-            },
-            "vertices": [
-              {
-                "x": 520,
-                "y": 310
-              },
-              {
-                "x": 520,
-                "y": 160
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Petición Web",
               "description": "Petición para registrar una cuenta de empleado",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -691,110 +583,6 @@
               {
                 "x": 750,
                 "y": 210
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Respuesta Web",
-              "description": "Respuesta en base a la petición del cliente:\nIniciar sesión\nMostrar un producto\nRealizar un movimiento en el carrito de compras\nMostrar el historial de compras",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Respuesta Web"
-            ],
-            "id": "1146fea8-0524-449c-926a-3360c1de1cdf",
-            "source": {
-              "x": 390,
-              "y": 400
-            },
-            "target": {
-              "cell": "5b99475d-8fe2-4510-94a7-6a15e53f578c",
-              "port": "a733e59c-7525-480d-8aad-8565534e36f9"
-            },
-            "vertices": [
-              {
-                "x": 310,
-                "y": 340
-              },
-              {
-                "x": 280,
-                "y": 230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Resultados de Consulta",
-              "description": "La respuesta a las consultas realizadas por el servidor",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Resultados de Consulta"
-            ],
-            "id": "1b85c56b-b24a-4e9a-97ed-b8424cbb6f4a",
-            "source": {
-              "x": 1080,
-              "y": 420
-            },
-            "target": {
-              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-              "port": "82fb06d7-7940-4634-89f2-1bbcdc431168"
-            },
-            "vertices": [
-              {
-                "x": 680,
-                "y": 420
               }
             ]
           },
@@ -942,7 +730,152 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Consultas a Base de Datos",
+              "description": "Consultas hechas por los usuarios desde el servidor para satisfacer una petición",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "58a4b1c4-5d35-470b-8496-85b753e442fd",
+                  "title": "Inyección SQL",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Se realiza una consulta que contiene código malicioso para realizar consultas fraudulentas",
+                  "mitigation": "1. Sanitizar las consultas antes de enviarlas a la base de datos\n2. Aplicar el principio del menor privilegio\n3. No utilizar el usuario root",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Consultas a Base de Datos"
+            ],
+            "id": "9a380cdd-d0af-4c8c-8451-236e2dead8f6",
+            "source": {
+              "x": 530,
+              "y": 480
+            },
+            "target": {
+              "cell": "caafeb40-c323-4fbf-af43-79d67af528ce",
+              "port": "678ad696-10b8-476f-b556-05ac6f609d6f"
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": 480
+              },
+              {
+                "x": 910,
+                "y": 500
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Resultados de Consulta",
+              "description": "La respuesta a las consultas realizadas por el servidor",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "50df3595-d486-4d3f-95ed-fb7065fb9ca0",
+                  "title": "Ataque Man in the Middle",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Los resultados enviados de la base de datos puede ser interceptados cuando se envían al servidor por un sniffer",
+                  "mitigation": "1. Utilizar cifrado\n2. Utilizar certificado SSL/TSL ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Resultados de Consulta"
+            ],
+            "id": "1b85c56b-b24a-4e9a-97ed-b8424cbb6f4a",
+            "source": {
+              "x": 1080,
+              "y": 420
+            },
+            "target": {
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "82fb06d7-7940-4634-89f2-1bbcdc431168"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -962,12 +895,31 @@
               "description": "Una petición para realizar una acción del cliente:\nRegistrar una cuenta\nIniciar Sesión\nVer productos\nFiltrar productos\nGestionar Carrito de Compra",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "158f1db8-420b-4690-b22e-cb73f14453fd",
+                  "title": "Manipulación de información",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "El usuario intenta cambiar parámetros a través de la URL o formularios",
+                  "mitigation": "1. Sanitizar y validar entradas\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Petición Web"
@@ -992,6 +944,154 @@
             "shape": "flow",
             "attrs": {
               "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta Web",
+              "description": "Respuesta en base a la petición del cliente:\nIniciar sesión\nMostrar un producto\nRealizar un movimiento en el carrito de compras\nMostrar el historial de compras",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "f6552ac3-3a16-4760-90e2-75e8f9652e76",
+                  "title": "Ataque eavesdropping",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Un atacante puede interceptar las respuestas del servidor si se envían por una red pública a Internet",
+                  "mitigation": "1. Utilizar certificado SSL/TSL\n2. Utilizar HTTPS, no permitir que se utilice HTTP",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Respuesta Web"
+            ],
+            "id": "1146fea8-0524-449c-926a-3360c1de1cdf",
+            "source": {
+              "x": 390,
+              "y": 400
+            },
+            "target": {
+              "cell": "5b99475d-8fe2-4510-94a7-6a15e53f578c",
+              "port": "a733e59c-7525-480d-8aad-8565534e36f9"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 340
+              },
+              {
+                "x": 280,
+                "y": 230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Petición Web",
+              "description": "Petición Web para realizar un cambio de CRUD para Producto o Catálogo: Crear, Modificar o Eliminar",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "bb6bc17d-943d-460c-b069-155030a29367",
+                  "title": "Modificación fraudulenta",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "El empleado puede modificar información de manera fraudulenta de productos, categorías o pedidos de clientes",
+                  "mitigation": "1. Validar entradas\n2. Implementar principio de menor privilegio",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Petición Web"
+            ],
+            "id": "0aa74e71-cefb-4939-9f9b-7dd3840a403b",
+            "source": {
+              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
+              "port": "7c289ccc-11cf-4c0d-ad8d-4a1f21b1fc2f"
+            },
+            "target": {
+              "x": 420,
+              "y": 390
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 190
+              },
+              {
+                "x": 370,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -1008,8 +1108,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Consultas a Base de Datos",
-              "description": "Consultas hechas por los usuarios desde el servidor para satisfacer una petición",
+              "name": "Respuesta Web",
+              "description": "El estado de la acción realizada, reflejada en la página actual",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -1020,27 +1120,37 @@
               "threats": []
             },
             "labels": [
-              "Consultas a Base de Datos"
+              "Respuesta Web"
             ],
-            "id": "9a380cdd-d0af-4c8c-8451-236e2dead8f6",
+            "id": "8f27f868-4aa1-484e-873c-26ed8fb4cbef",
             "source": {
-              "x": 530,
-              "y": 480
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "c8dc8026-c6b2-4d4f-9a4d-ea6241bb39b4"
             },
             "target": {
-              "cell": "caafeb40-c323-4fbf-af43-79d67af528ce",
-              "port": "678ad696-10b8-476f-b556-05ac6f609d6f"
+              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
+              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
             },
             "vertices": [
               {
-                "x": 670,
-                "y": 480
+                "x": 520,
+                "y": 310
               },
               {
-                "x": 910,
-                "y": 500
+                "x": 520,
+                "y": 160
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -1606,6 +1716,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 9
+    "threatTop": 14
   }
 }
