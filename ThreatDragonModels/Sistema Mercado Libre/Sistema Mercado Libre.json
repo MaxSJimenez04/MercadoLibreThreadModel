@@ -489,114 +489,6 @@
                 "sourceMarker": {
                   "name": ""
                 },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Petición Web",
-              "description": "Petición para registrar una cuenta de empleado",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Petición Web"
-            ],
-            "id": "996c2ef7-3291-4033-8c7d-85f46469a5c2",
-            "source": {
-              "x": 640,
-              "y": 130
-            },
-            "target": {
-              "x": 540,
-              "y": 390
-            },
-            "vertices": [
-              {
-                "x": 640,
-                "y": 220
-              },
-              {
-                "x": 580,
-                "y": 320
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Respuesta Web",
-              "description": "El código de respuesta al crear una cuenta de empleado",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Respuesta Web"
-            ],
-            "id": "be8e5a1c-9da7-4893-adaa-0aa605b763e6",
-            "source": {
-              "x": 570,
-              "y": 400
-            },
-            "target": {
-              "cell": "b3df5c4a-d0fc-4a9a-8963-e6942291f660",
-              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
-            },
-            "vertices": [
-              {
-                "x": 680,
-                "y": 360
-              },
-              {
-                "x": 750,
-                "y": 210
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
                 "strokeDasharray": "4 3"
               }
             },
@@ -961,6 +853,80 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Petición Web",
+              "description": "Petición Web para realizar un cambio de CRUD para Producto o Catálogo: Crear, Modificar o Eliminar",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "bb6bc17d-943d-460c-b069-155030a29367",
+                  "title": "Modificación fraudulenta",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "El empleado puede modificar información de manera fraudulenta de productos, categorías o pedidos de clientes",
+                  "mitigation": "1. Validar entradas\n2. Implementar principio de menor privilegio",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Petición Web"
+            ],
+            "id": "0aa74e71-cefb-4939-9f9b-7dd3840a403b",
+            "source": {
+              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
+              "port": "7c289ccc-11cf-4c0d-ad8d-4a1f21b1fc2f"
+            },
+            "target": {
+              "x": 420,
+              "y": 390
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 190
+              },
+              {
+                "x": 370,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Respuesta Web",
               "description": "Respuesta en base a la petición del cliente:\nIniciar sesión\nMostrar un producto\nRealizar un movimiento en el carrito de compras\nMostrar el historial de compras",
               "outOfScope": false,
@@ -1035,8 +1001,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Petición Web",
-              "description": "Petición Web para realizar un cambio de CRUD para Producto o Catálogo: Crear, Modificar o Eliminar",
+              "name": "Respuesta Web",
+              "description": "El estado de la acción realizada, reflejada en la página actual",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -1046,45 +1012,119 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "bb6bc17d-943d-460c-b069-155030a29367",
-                  "title": "Modificación fraudulenta",
+                  "id": "da82c655-ae38-441f-ac5f-2bde87cc7a94",
+                  "title": "Ataque eavesdropping",
                   "status": "Open",
                   "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "El empleado puede modificar información de manera fraudulenta de productos, categorías o pedidos de clientes",
-                  "mitigation": "1. Validar entradas\n2. Implementar principio de menor privilegio",
+                  "type": "Information disclosure",
+                  "description": "Un atacante puede interceptar y leer la información de la respuesta si es enviada por un red pública a Internet",
+                  "mitigation": "1. Utilizar certificado SSL/TSL\n2. Permitir solamente HTTPS, haciendo a HTTP incompatible",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 14,
+                  "number": 15,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
+                "tampering": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             },
             "labels": [
-              "Petición Web"
+              "Respuesta Web"
             ],
-            "id": "0aa74e71-cefb-4939-9f9b-7dd3840a403b",
+            "id": "8f27f868-4aa1-484e-873c-26ed8fb4cbef",
             "source": {
-              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
-              "port": "7c289ccc-11cf-4c0d-ad8d-4a1f21b1fc2f"
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "c8dc8026-c6b2-4d4f-9a4d-ea6241bb39b4"
             },
             "target": {
-              "x": 420,
-              "y": 390
+              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
+              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
             },
             "vertices": [
               {
-                "x": 350,
-                "y": 190
+                "x": 520,
+                "y": 310
               },
               {
-                "x": 370,
-                "y": 320
+                "x": 520,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta Web",
+              "description": "El código de respuesta al crear una cuenta de empleado",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "aec6e6b6-8ad1-4537-acce-be31a6aa852a",
+                  "title": "Ataque eavesdropping",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Se interceptan y leen los datos de la respuesta al crear un usuario",
+                  "mitigation": "1. Utilizar cifrado SSL/TSL\n2. Permitir solamente HTTPS, haciendo incompatible HTTP\n3. No subir secretos a través de solicitudes web",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Respuesta Web"
+            ],
+            "id": "be8e5a1c-9da7-4893-adaa-0aa605b763e6",
+            "source": {
+              "x": 570,
+              "y": 400
+            },
+            "target": {
+              "cell": "b3df5c4a-d0fc-4a9a-8963-e6942291f660",
+              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 360
+              },
+              {
+                "x": 750,
+                "y": 210
               }
             ]
           },
@@ -1108,8 +1148,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Respuesta Web",
-              "description": "El estado de la acción realizada, reflejada en la página actual",
+              "name": "Petición Web",
+              "description": "Petición para registrar una cuenta de empleado",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -1120,37 +1160,27 @@
               "threats": []
             },
             "labels": [
-              "Respuesta Web"
+              "Petición Web"
             ],
-            "id": "8f27f868-4aa1-484e-873c-26ed8fb4cbef",
+            "id": "996c2ef7-3291-4033-8c7d-85f46469a5c2",
             "source": {
-              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-              "port": "c8dc8026-c6b2-4d4f-9a4d-ea6241bb39b4"
+              "x": 640,
+              "y": 130
             },
             "target": {
-              "cell": "8e83b18a-9a22-4377-a2ef-d89a404964e7",
-              "port": "3dd60e6d-53df-41ef-bc6f-fe476def2619"
+              "x": 540,
+              "y": 390
             },
             "vertices": [
               {
-                "x": 520,
-                "y": 310
+                "x": 640,
+                "y": 220
               },
               {
-                "x": 520,
-                "y": 160
+                "x": 580,
+                "y": 320
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "position": {
@@ -1716,6 +1746,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 14
+    "threatTop": 16
   }
 }
