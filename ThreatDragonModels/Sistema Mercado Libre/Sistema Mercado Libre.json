@@ -1132,7 +1132,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1152,12 +1153,31 @@
               "description": "Petición para registrar una cuenta de empleado",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a8ff33f9-7d7c-4b12-823f-e005023bf622",
+                  "title": "Manipulción de roles",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "El atacante utiliza el URL o formularios para crear cuentas de empleados no legítimos con la cuenta de administrador",
+                  "mitigation": "1. Validar entradas\n2. Sanitizar entradas\n3. Implementar principio del menor privilegio",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Petición Web"
@@ -1746,6 +1766,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 16
+    "threatTop": 17
   }
 }
