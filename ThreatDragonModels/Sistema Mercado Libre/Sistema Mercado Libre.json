@@ -26,7 +26,7 @@
         "cells": [
           {
             "position": {
-              "x": 970,
+              "x": 1430,
               "y": 335
             },
             "size": {
@@ -609,76 +609,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Resultados de Consulta",
-              "description": "La respuesta a las consultas realizadas por el servidor",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "50df3595-d486-4d3f-95ed-fb7065fb9ca0",
-                  "title": "Ataque Man in the Middle",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Los resultados enviados de la base de datos puede ser interceptados cuando se envían al servidor por un sniffer",
-                  "mitigation": "1. Utilizar cifrado\n2. Utilizar certificado SSL/TSL ",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 11,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Resultados de Consulta"
-            ],
-            "id": "1b85c56b-b24a-4e9a-97ed-b8424cbb6f4a",
-            "source": {
-              "x": 1080,
-              "y": 420
-            },
-            "target": {
-              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-              "port": "82fb06d7-7940-4634-89f2-1bbcdc431168"
-            },
-            "vertices": [
-              {
-                "x": 680,
-                "y": 420
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Petición Web",
               "description": "Una petición para realizar una acción del cliente:\nRegistrar una cuenta\nIniciar Sesión\nVer productos\nFiltrar productos\nGestionar Carrito de Compra",
               "outOfScope": false,
@@ -1099,6 +1029,125 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "823b97c2-8ce5-4dab-9a72-d30dd5d3857a",
+            "source": {
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "82fb06d7-7940-4634-89f2-1bbcdc431168"
+            },
+            "target": {
+              "cell": "17c1b8e6-2fb7-4950-815b-b7707fa18f39",
+              "port": "b46d297b-b2e1-4d05-b78a-6a1a67295606"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Resultados de Consulta",
+              "description": "La respuesta a las consultas realizadas por el servidor",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "50df3595-d486-4d3f-95ed-fb7065fb9ca0",
+                  "title": "Ataque Man in the Middle",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Los resultados enviados de la base de datos puede ser interceptados cuando se envían al servidor por un sniffer",
+                  "mitigation": "1. Utilizar cifrado\n2. Utilizar certificado SSL/TSL ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Resultados de Consulta"
+            ],
+            "id": "1b85c56b-b24a-4e9a-97ed-b8424cbb6f4a",
+            "source": {
+              "cell": "caafeb40-c323-4fbf-af43-79d67af528ce",
+              "port": "678ad696-10b8-476f-b556-05ac6f609d6f"
+            },
+            "target": {
+              "cell": "17c1b8e6-2fb7-4950-815b-b7707fa18f39",
+              "port": "1b5cc92b-e734-445b-aeb4-68ed58b756ad"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 420
+              },
+              {
+                "x": 700,
+                "y": 470
+              }
+            ]
+          },
+          {
             "position": {
               "x": 390,
               "y": 390
@@ -1254,8 +1303,8 @@
           },
           {
             "position": {
-              "x": 1100,
-              "y": 415
+              "x": 1620,
+              "y": 425
             },
             "size": {
               "width": 120,
@@ -1408,6 +1457,125 @@
                 "informationDisclosure": 1,
                 "denialOfService": 1
               }
+            }
+          },
+          {
+            "position": {
+              "x": 581.25,
+              "y": 535
+            },
+            "size": {
+              "width": 170,
+              "height": 140
+            },
+            "attrs": {
+              "text": {
+                "text": "Backend \nMercado Libre"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b46d297b-b2e1-4d05-b78a-6a1a67295606"
+                },
+                {
+                  "group": "right",
+                  "id": "1b5cc92b-e734-445b-aeb4-68ed58b756ad"
+                },
+                {
+                  "group": "bottom",
+                  "id": "85ff074a-49dc-4c82-8ef6-805874be02ee"
+                },
+                {
+                  "group": "left",
+                  "id": "0c5a9376-91a3-4cb8-9eba-3c8a2aab7c12"
+                }
+              ]
+            },
+            "id": "17c1b8e6-2fb7-4950-815b-b7707fa18f39",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Process",
+              "name": "Backend \nMercado Libre",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
             }
           }
         ],
