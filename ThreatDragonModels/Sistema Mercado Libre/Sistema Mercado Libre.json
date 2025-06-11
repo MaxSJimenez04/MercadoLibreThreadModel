@@ -1028,110 +1028,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "JWT token",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "JWT token"
-            ],
-            "id": "bfa13bd7-a7e7-4bf4-85dd-6a400542bf88",
-            "source": {
-              "cell": "17c1b8e6-2fb7-4950-815b-b7707fa18f39",
-              "port": "0c5a9376-91a3-4cb8-9eba-3c8a2aab7c12"
-            },
-            "target": {
-              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
-              "port": "bc016033-28ac-49b1-b151-23aad02e2743"
-            },
-            "vertices": [
-              {
-                "x": 810,
-                "y": 580
-              },
-              {
-                "x": 590,
-                "y": 580
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Respuesta a consulta",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Respuesta a consulta"
-            ],
-            "id": "0c9973a5-34b7-4d9f-84a7-afd6331bd652",
-            "source": {
-              "cell": "17c1b8e6-2fb7-4950-815b-b7707fa18f39",
-              "port": "0c5a9376-91a3-4cb8-9eba-3c8a2aab7c12"
-            },
-            "target": {
-              "x": 520,
-              "y": 530
-            },
-            "vertices": [
-              {
-                "x": 720,
-                "y": 530
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -1362,17 +1258,164 @@
                 "x": 700,
                 "y": 420
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respuesta a consulta",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "55a2e3d0-75aa-409a-9c43-4f6b73cdf65f",
+                  "title": "Respuesta modificada",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Se modifica la respuesta del backend, provocando que se muestre información errónea o dañina para el sistema",
+                  "mitigation": "Cifrar la comunicación\nValidar entradas en el frontend",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
               ],
-              "name": null
-            }
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Respuesta a consulta"
+            ],
+            "id": "0c9973a5-34b7-4d9f-84a7-afd6331bd652",
+            "source": {
+              "cell": "17c1b8e6-2fb7-4950-815b-b7707fa18f39",
+              "port": "0c5a9376-91a3-4cb8-9eba-3c8a2aab7c12"
+            },
+            "target": {
+              "x": 520,
+              "y": 530
+            },
+            "vertices": [
+              {
+                "x": 720,
+                "y": 530
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "JWT token",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "e90b6848-46da-4c3e-bf78-124dbf33c645",
+                  "title": "Robo de JWT",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Se consigue la información de sesión del token JWT",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                },
+                {
+                  "id": "7970097c-510d-4c40-bd1b-b90810f03ed9",
+                  "title": "Uso de JWT robado",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Se utiliza el JWT de un usuario que ha sido robado o se modifica uno existente para acceder al sistema",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "JWT token"
+            ],
+            "id": "bfa13bd7-a7e7-4bf4-85dd-6a400542bf88",
+            "source": {
+              "cell": "17c1b8e6-2fb7-4950-815b-b7707fa18f39",
+              "port": "0c5a9376-91a3-4cb8-9eba-3c8a2aab7c12"
+            },
+            "target": {
+              "cell": "be6cd118-1f1f-44f5-9c1d-ab06535415a2",
+              "port": "bc016033-28ac-49b1-b151-23aad02e2743"
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 580
+              },
+              {
+                "x": 590,
+                "y": 580
+              }
+            ]
           },
           {
             "position": {
@@ -1700,8 +1743,8 @@
                 "text": "Backend \nMercado Libre"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1797,12 +1840,47 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a5e1a6c3-60b5-467a-a3ed-5ec18f30c82c",
+                  "title": "Acceso de personal no autorizado",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "El backend autoriza funcionalidades a usuarios no autenticados, anónimos o con menos privilegios de manera injusta o fraudulenta",
+                  "mitigation": "Implementar autenticación y métodos de autorización a los métodos de la API",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                },
+                {
+                  "id": "1a43d933-7605-4557-9c2b-395eccfaad82",
+                  "title": "Falta de registros de acciones",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Falta de funcionalidades que registren acciones que hayan realizado los usuarios dentro del sistema",
+                  "mitigation": "Implementar uso de bitácora, logs y auditorias",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           }
         ],
@@ -1811,6 +1889,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Guillermo Vera",
-    "threatTop": 21
+    "threatTop": 26
   }
 }
